@@ -1,0 +1,82 @@
+data {
+   item: "theme/name"     "BlingBling";
+   item: "theme/version"  "0.17.7.7";
+   item: "theme/author"   "Raster & Netstar";
+   item: "theme/license"  "3-Clause BSD";
+}
+
+fonts {
+   font: "Vera.ttf"   "Edje-Vera";
+   font: "VeraBd.ttf" "Edje-Vera-Bold";
+}
+
+#if 0
+spectra {
+  spectrum {
+    name: "black_to_trans";
+    color: 0 0 0 255 1;
+    color: 0 0 0 0 1;
+  }
+   spectrum 
+     {
+	name: "rubberband";
+	color: 255 231 157 127 1;
+	color: 255 249 231 127 1;
+     }
+}
+#endif
+
+collections {
+#include "default/default_background.edc"
+#include "default/default_battery.edc"
+#include "default/default_border.edc"
+#include "default/default_clock.edc"
+#include "default/default_gadman.edc"
+#include "default/default_ibar.edc"
+#include "default/default_menu.edc"
+#include "default/default_pager.edc"
+#include "default/default_resize.edc"
+#include "default/default_move.edc"
+#include "default/default_temperature.edc"
+#include "default/default_error.edc"
+#include "default/default_cpufreq.edc"
+#include "default/default_ibox.edc"
+#include "default/default_start.edc"
+#include "default/default_winlist.edc"
+#include "default/default_transitions.edc"
+#include "default/default_dialog.edc"
+#include "default/default_configure.edc"
+#include "default/default_icons.edc"
+#include "default/default_pointer.edc"
+#include "default/default_about.edc"
+#include "default/default_theme_about.edc"
+#include "default/default_entry.edc"
+#include "default/default_fileman.edc"
+#include "default/default_filesel.edc"   
+#include "default/default_check.edc"
+#include "default/default_radio.edc"
+#include "default/default_frame.edc"
+#include "default/default_button.edc"
+#include "default/default_label.edc"
+#include "default/default_scrollframe.edc"
+#include "default/default_ilist.edc"
+#include "default/default_tlist.edc"
+#include "default/default_slider.edc"
+#include "default/default_exebuf.edc"
+#include "default/default_desklock.edc"
+#include "default/default_textblock.edc"
+#include "default/default_shelf.edc"
+#include "default/default_preview.edc"
+#include "default/default_cslider.edc"
+#include "default/default_spectrum.edc"
+#include "default/default_color_well.edc"
+#include "default/default_sys.edc"
+#include "default/default_deskpreview.edc"
+#include "default/default_fontpreview.edc"
+#include "default/default_wizard.edc"
+#include "default/default_toolbar.edc"
+#include "default/default_slidesel.edc"
+#include "default/default_mixer.edc"
+#include "default/default_connman.edc"
+#include "default/default_taskbar.edc"
+}
