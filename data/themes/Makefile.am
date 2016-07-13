@@ -14,6 +14,7 @@ EDJE_FLAGS = $(EDJE_FLAGS_$(V)) \
 filesdir = $(datadir)/enform/data/themes
 files_DATA = default.edj \
 dark.edj \
+efenniht.edj \
 detourious.edj
 
 EXTRA_DIST = 
