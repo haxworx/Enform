@@ -368,22 +368,6 @@ group "E_Config" struct {
                     value "autoscroll" uchar: 0;
                     value "resizable" uchar: 0;
                 }
-                group "E_Config_Gadcon_Client" struct {
-                    value "name" string: "battery";
-                    value "id" string: "battery.1";
-                    value "geom.pos" int: 589;
-                    value "geom.size" int: 0;
-                    value "geom.res" int: 0;
-                    value "geom.pos_x" double: 0.9033674963396779444835261;
-                    value "geom.pos_y" double: 0.7669270833333333703407675;
-                    value "geom.size_w" double: 0.0000000000000000000000000;
-                    value "geom.size_h" double: 0.0000000000000000000000000;
-                    value "state_info.seq" int: 0;
-                    value "state_info.flags" int: 0;
-                    value "orient" int: 6;
-                    value "autoscroll" uchar: 0;
-                    value "resizable" uchar: 0;
-                }
             }
             value "name" string: "gadman";
             value "id" int: 114;
@@ -424,6 +408,7 @@ group "E_Config" struct {
                     value "geom.size_h" double: 0.0000000000000000000000000;
                     value "state_info.seq" int: 3;
                     value "state_info.flags" int: 3;
+                    value "style" string: "plain";
                     value "orient" int: 0;
                     value "autoscroll" uchar: 1;
                     value "resizable" uchar: 0;
@@ -566,6 +551,62 @@ group "E_Config" struct {
         }
     }
     group "remembers" list {
+        group "E_Remember" struct {
+            value "match" int: 51;
+            value "no_reopen" int: 0;
+            value "apply_first_only" uchar: 0;
+            value "keep_settings" uchar: 0;
+            value "name" string: "Tasks";
+            value "class" string: "_config::_e_modules_tasks_config_dialog";
+            value "type" int: 7;
+            value "transient" uchar: 1;
+            value "apply" int: 19;
+            value "max_score" int: 0;
+            value "prop.pos_x" int: 550;
+            value "prop.pos_y" int: 221;
+            value "prop.res_x" int: 1366;
+            value "prop.res_y" int: 768;
+            value "prop.pos_w" int: 258;
+            value "prop.pos_h" int: 242;
+            value "prop.w" int: 258;
+            value "prop.h" int: 242;
+            value "prop.layer" int: 0;
+            value "prop.lock_user_location" uchar: 0;
+            value "prop.lock_client_location" uchar: 0;
+            value "prop.lock_user_size" uchar: 0;
+            value "prop.lock_client_size" uchar: 0;
+            value "prop.lock_user_stacking" uchar: 0;
+            value "prop.lock_client_stacking" uchar: 0;
+            value "prop.lock_user_iconify" uchar: 0;
+            value "prop.lock_client_iconify" uchar: 0;
+            value "prop.lock_user_desk" uchar: 0;
+            value "prop.lock_client_desk" uchar: 0;
+            value "prop.lock_user_sticky" uchar: 0;
+            value "prop.lock_client_sticky" uchar: 0;
+            value "prop.lock_user_shade" uchar: 0;
+            value "prop.lock_client_shade" uchar: 0;
+            value "prop.lock_user_maximize" uchar: 0;
+            value "prop.lock_client_maximize" uchar: 0;
+            value "prop.lock_user_fullscreen" uchar: 0;
+            value "prop.lock_client_fullscreen" uchar: 0;
+            value "prop.lock_border" uchar: 0;
+            value "prop.lock_close" uchar: 0;
+            value "prop.lock_focus_in" uchar: 0;
+            value "prop.lock_focus_out" uchar: 0;
+            value "prop.lock_life" uchar: 0;
+            value "prop.sticky" uchar: 0;
+            value "prop.shaded" uchar: 0;
+            value "prop.skip_winlist" uchar: 0;
+            value "prop.skip_pager" uchar: 0;
+            value "prop.skip_taskbar" uchar: 0;
+            value "prop.fullscreen" uchar: 0;
+            value "prop.desk_x" int: 0;
+            value "prop.desk_y" int: 0;
+            value "prop.zone" int: 0;
+            value "prop.head" int: 0;
+            value "prop.icon_preference" uchar: 0;
+            value "prop.offer_resistance" uchar: 0;
+        }
         group "E_Remember" struct {
             value "match" int: 51;
             value "no_reopen" int: 0;
@@ -2821,10 +2862,10 @@ group "E_Config" struct {
             value "prop.pos_y" int: 130;
             value "prop.res_x" int: 1366;
             value "prop.res_y" int: 768;
-            value "prop.pos_w" int: 432;
-            value "prop.pos_h" int: 400;
-            value "prop.w" int: 432;
-            value "prop.h" int: 400;
+            value "prop.pos_w" int: 418;
+            value "prop.pos_h" int: 338;
+            value "prop.w" int: 418;
+            value "prop.h" int: 338;
             value "prop.layer" int: 0;
             value "prop.lock_user_location" uchar: 0;
             value "prop.lock_client_location" uchar: 0;
@@ -3045,9 +3086,9 @@ group "E_Config" struct {
             value "prop.pos_y" int: 282;
             value "prop.res_x" int: 1366;
             value "prop.res_y" int: 768;
-            value "prop.pos_w" int: 436;
+            value "prop.pos_w" int: 367;
             value "prop.pos_h" int: 179;
-            value "prop.w" int: 436;
+            value "prop.w" int: 367;
             value "prop.h" int: 179;
             value "prop.layer" int: 0;
             value "prop.lock_user_location" uchar: 0;
@@ -3769,10 +3810,10 @@ group "E_Config" struct {
             value "transient" uchar: 1;
             value "apply" int: 19;
             value "max_score" int: 0;
-            value "prop.pos_x" int: 515;
-            value "prop.pos_y" int: 446;
-            value "prop.res_x" int: 1920;
-            value "prop.res_y" int: 1080;
+            value "prop.pos_x" int: 238;
+            value "prop.pos_y" int: 290;
+            value "prop.res_x" int: 1366;
+            value "prop.res_y" int: 768;
             value "prop.pos_w" int: 683;
             value "prop.pos_h" int: 384;
             value "prop.w" int: 683;
@@ -3829,10 +3870,10 @@ group "E_Config" struct {
             value "prop.pos_y" int: 283;
             value "prop.res_x" int: 1366;
             value "prop.res_y" int: 768;
-            value "prop.pos_w" int: 400;
-            value "prop.pos_h" int: 160;
-            value "prop.w" int: 400;
-            value "prop.h" int: 160;
+            value "prop.pos_w" int: 545;
+            value "prop.pos_h" int: 214;
+            value "prop.w" int: 545;
+            value "prop.h" int: 214;
             value "prop.layer" int: 0;
             value "prop.lock_user_location" uchar: 0;
             value "prop.lock_client_location" uchar: 0;
@@ -3941,10 +3982,10 @@ group "E_Config" struct {
             value "prop.pos_y" int: 285;
             value "prop.res_x" int: 1366;
             value "prop.res_y" int: 768;
-            value "prop.pos_w" int: 313;
-            value "prop.pos_h" int: 121;
-            value "prop.w" int: 313;
-            value "prop.h" int: 121;
+            value "prop.pos_w" int: 289;
+            value "prop.pos_h" int: 82;
+            value "prop.w" int: 289;
+            value "prop.h" int: 82;
             value "prop.layer" int: 0;
             value "prop.lock_user_location" uchar: 0;
             value "prop.lock_client_location" uchar: 0;
@@ -6142,33 +6183,9 @@ group "E_Config" struct {
             value "priority" int: -1000;
         }
     }
-    group "desktop_backgrounds" list {
-        group "E_Config_Desktop_Background" struct {
-            value "container" int: 0;
-            value "zone" int: 0;
-            value "desk_x" int: 1;
-            value "desk_y" int: 0;
-            value "file" string: "Cracked_Earth.edj";
-        }
-        group "E_Config_Desktop_Background" struct {
-            value "container" int: 0;
-            value "zone" int: 0;
-            value "desk_x" int: 2;
-            value "desk_y" int: 0;
-            value "file" string: "Eager_Amiga.edj";
-        }
-        group "E_Config_Desktop_Background" struct {
-            value "container" int: 0;
-            value "zone" int: 0;
-            value "desk_x" int: 3;
-            value "desk_y" int: 0;
-            value "file" string: "Sabana_Night.edj";
-        }
-    }
     value "config_version" int: 1000007;
     value "show_splash" int: 0;
     value "init_default_theme" string: "default.edj";
-    value "desktop_default_background" string: "Brushed_Metal.edj";
     value "desktop_default_name" string: "%i-%i";
     value "desktop_default_window_profile" string: "standard";
     value "menus_scroll_speed" double: 1000.0000000000000000000000000;
@@ -6314,7 +6331,7 @@ group "E_Config" struct {
     value "desk_flip_wrap" int: 0;
     value "fullscreen_flip" int: 1;
     value "multiscreen_flip" int: 0;
-    value "icon_theme" string: "Adwaita";
+    value "icon_theme" string: "Enlightenment-X";
     value "icon_theme_overrides" uchar: 0;
     value "desk_flip_animate_mode" int: 1;
     value "desk_flip_animate_interpolation" int: 0;
