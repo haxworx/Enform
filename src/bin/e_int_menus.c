@@ -265,6 +265,8 @@ e_int_menus_main_new(void)
    e_menu_item_label_set(mi, _("Exit"));
    e_util_menu_item_theme_icon_set(mi, "application-exit");
    e_menu_item_callback_set(mi, _e_int_menus_main_exit, NULL);
+ 
+   e_object_unref(E_OBJECT(subm)); 
 
    l = _e_int_menus_augmentation_find("enform/3");
    if (l) _e_int_menus_augmentation_add(subm, l);
