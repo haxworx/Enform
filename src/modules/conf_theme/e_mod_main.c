@@ -193,8 +193,6 @@ _e_mod_menu_theme_add(void *data __UNUSED__, E_Menu *m)
      e_menu_item_separator_set(e_menu_item_new(m), 1);
    EINA_LIST_FOREACH(sthemes, l, file)
      _item_new(file, m);
-
-   e_object_unref(E_OBJECT(m));
 }
 
 
