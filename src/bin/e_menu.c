@@ -1281,7 +1281,7 @@ e_menu_find_by_window(Ecore_X_Window win)
      return NULL;
    return m;
 }
-
+/* Backported from e21 */
 /* local subsystem functions */
 static void
 _e_menu_free(E_Menu *m)
@@ -1301,18 +1301,17 @@ _e_menu_free(E_Menu *m)
              if (cb->free) cb->free(cb->data);
           }
      }
-   if (m->parent_item && (m->parent_item->submenu == m))
+   eina_stringshare_replace(&m->category, NULL);
+   if (m->parent_item)
      m->parent_item->submenu = NULL;
    _e_menu_unrealize(m);
-   E_FREE(m->shape_rects);
-   m->shape_rects_num = 0;
+   if (m->realized) return;
    EINA_LIST_FOREACH_SAFE (m->items, l, l_next, mi)
      e_object_del(E_OBJECT(mi));
    if (m->in_active_list)
      {
         _e_active_menus = eina_list_remove(_e_active_menus, m);
         m->in_active_list = 0;
-        e_object_unref(E_OBJECT(m));
      }
    if (m->header.title) eina_stringshare_del(m->header.title);
    if (m->header.icon_file) eina_stringshare_del(m->header.icon_file);
